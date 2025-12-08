@@ -1,0 +1,603 @@
+html{
+      scroll-behavior: smooth;
+    }
+      
+      body{
+  margin: 0;
+  padding: 0;
+  font-family: Times New Roman;
+}
+
+/* navigation bar */
+
+#nav-bar{
+  width: 60%;
+  margin: auto;
+  position: fixed;
+  top: 3%;
+  left: 20%;
+  background: rgb(244,244,244);
+  border-radius: 50px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  z-index: 4;
+}
+
+#nav-bar ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+#nav-bar ul li{
+  margin: 20px 10px;
+  padding: 5px;
+}
+#nav-bar li a{
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+}
+#nav-bar li a:hover{
+  background: black;
+  color: white;
+  border-radius: 50px;
+  transition: all ease 0.8s;
+}
+
+/* home section */
+
+#home{
+  width: 85%;
+  margin: auto;
+  padding-top: 110px;
+}
+
+#home .home{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content{
+  width: 50%;
+  position: relative;
+  margin-left: 73px;
+}
+
+.home-content p:nth-child(1){
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background: rgb(235,235,235);
+  font-size: 20px;
+}
+.home-content p:nth-child(4){
+  font-size: 20px;
+}
+.home-content h1{
+  font-size: 66px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgb(90,193,200),
+               1px 1px 4px rgb(90,193,200),
+               1px 1px 6px rgb(90,193,200),
+               1px 1px 8px rgb(90,193,200);
+}
+.home-content h1 b{
+  color: red;
+}
+
+.home-content .btn{
+  text-decoration: none;
+  background: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 10px 4px;
+}
+.home-content .btn:hover{
+  background: rgba(0,0,0,0.8);
+}
+
+.home-content a{
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+.home-content img{
+  border-bottom: 10px groove black
+}
+
+.home-content .typing-effect{
+  width: 25ch;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  animation: type  6s 0s steps(25) forwards infinite, blink 0.55s linear infinite;
+  overflow: hidden;
+}
+
+.home-content .circle{
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, red 0%, rgb(226,226,226) 100%);
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  z-index: -1;
+  animation: image-effect 4s 0s linear infinite;
+}
+
+/*  Animation */
+
+@keyframes image-effect{
+   0%{
+     background: radial-gradient(circle, red 30%, black 100%);
+     box-shadow: 0px 0px 20px red;
+   }
+   100%{
+     background: radial-gradient(circle, blue 30%, black 100%);
+     box-shadow: 0px 0px 20px blue;
+   }
+}
+
+@keyframes type{
+  from{
+    width: 0ch;
+  }
+  to{
+    width: 25ch;
+  }
+}
+@keyframes blink{
+  50%{
+    border-color: transparent;
+  }
+}
+
+/* about section */
+
+#about{
+  width: 85%;
+  margin: auto;
+  padding-top: 110px;
+}
+
+#about .about{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content{
+  width: 50%;
+}
+
+.about-content p:nth-child(1){
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background: rgb(235,235,235);
+  font-size: 12px;
+}
+.about-content p:nth-child(3){
+  font-size: 12px;
+  
+}
+.about-content p:nth-child(4){
+  font-size: 12px
+}
+.about-content h1{
+  font-size: 50px;
+  font-weight: bolder
+}
+
+.about-content h2{
+  font-weight: bolder
+}
+
+.about-content .box{
+  width: 31%;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+.about-content .box h3{
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.about-content .img-box{
+  overflow: hidden;
+  margin: 0px 160px;
+  border: 5px solid rgba(0,0,0,0.7);
+  border-radius: 25px;
+  width: 65%;
+  height: 515px;
+  text-align: center;
+  background: rgba(231,198,225,0.4);
+}
+.img-box img{
+  width: 100%;
+}
+
+/* Image gellery */
+
+#gellery{
+  margin-top: 10px;
+  padding-top: 110px;
+  justify-items: center;
+}
+#gellery .gellery{
+  width: 85%;
+  margin: auto;
+  padding: 10px 0px;
+}
+#gellery h1{
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+.gellery .image{
+  border-radius: 14px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gellery .image img{
+  width: 20%;
+  filter: blur(4px);
+  transition: all ease-in-out 0.55s;
+}
+
+.gellery .image img:hover{
+  width: 30%;
+  border-radius: 15px;
+  filter: blur(0px);
+  box-shadow: 2px 2px 4px black;
+  z-index: 1;
+}
+
+/*  projects section */
+
+#projects{
+  width: 85%;
+  margin: auto;
+  padding-top: 90px;
+}
+#projects .projects{
+  padding: 0px;
+  text-align: center;
+}
+#projects .projects h1{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.projects .projects-content{
+  display: inline-block;
+  width: 31%;
+  height: 428px;
+  overflow: auto;
+  padding: 15px;
+  margin: 10px 10px;
+  background: rgba(255,255,255,1);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.projects-content .projects-image{
+  background: black;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.projects-image::before{
+  content: "";
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  background: linear-gradient(180deg, blue,  red, pink, blue, green);
+  animation: border-effect 2s linear infinite;
+}
+.projects-image::after{
+  content: "";
+  background: black;
+  inset: 15px;
+  position: absolute;
+}
+
+@keyframes border-effect{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.projects-image img{
+  width: 100%;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+.projects-content h2{
+  font-size: 26px;
+  font-weight: bolder;
+  color: rgb(59,156,239);
+}
+.projects-content span{
+  background: rgba(167,169,201,0.6);
+  padding: 2px 6px;
+  margin: 2px 4px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 6px;
+}
+
+.projects-link{
+  text-align: center;
+  padding: 29px;
+}
+.projects-link a{
+  text-decoration: none;
+  color: white;
+  background: blue;
+  font-size: 18px;
+  padding: 6px 8px;
+  margin: 4px 8px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 18px;
+}
+
+
+/*  skill section */
+
+#skill{
+  width: 85%;
+  margin: auto;
+  padding-top: 90px;
+}
+#skill .skill{
+  padding: 0px;
+  text-align: center;
+}
+#skill .skill h1{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.skill .skill-content{
+  display: inline-block;
+  width: 31%;
+  height: auto;
+  padding: 15px;
+  margin: 10px 10px;
+  background: rgba(255,255,255,1);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.skill-content h2{
+  font-weight: bolder;
+  color: rgb(213,32,59);
+}
+
+.skill-image{
+  width: 100%;
+  height: 265px;
+  padding: 40px;
+  text-align: center;
+}
+.skill-image img{
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+/*  contact section */
+
+#contact{
+  width: 85%;
+  margin: auto;
+  padding-top: 130px;
+}
+#contact h1{
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#contact .contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .contact-content{
+  width: 50%;
+  padding: 20px;
+}
+
+.contact-content p{
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+.contact-content span{
+  font-size: 15px;
+}
+.contact-content span i{
+  color: blue;
+}
+
+.contact-content a{
+  text-decoration: none;
+  color: black;
+  background: rgb(235,232,233);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 50%;
+  padding: 8px 10px;
+  margin: 20px 6px 80px 0px;
+  font-size: 30px;
+}
+
+
+.contact-content form{
+  margin: 0;
+  padding: 10px;
+}
+.contact-content input, textarea{
+  all: unset;
+  width: 98%;
+  margin: 10px 0px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  border: 2px solid transparent;
+  transition: border 0.33s ease-in-out;
+}
+.contact-content input:focus, textarea:focus{
+  border-color:  rgb(151,10,148);
+}
+
+.contact-content .submit-btn{
+  width: 20%;
+  color: white;
+  border: none;
+  background: blue;
+  font-weight: bolder;
+  margin: 10px 0px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+
+/* footer */
+
+footer{
+  background: black;
+}
+
+footer .footer{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer h1{
+  font-weight: bolder;
+  color: white;
+}
+
+.footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer ul li{
+  margin: 20px 10px;
+  padding: 5px;
+}
+.footer li a{
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+.footer li a:hover{
+  background: white;
+  color: black;
+  border-radius: 50px;
+  transition: all ease 0.8s;
+}
+
+.footer a{
+  color: white;
+  font-size: 35px;
+  margin: 10px;
+}
+
+
+
+/* utility classe */
+
+.hr{
+  width: 100%;
+  height: 2px;
+  background: rgba(0,0,0,0.8);
+  margin: 8px 0px;
+}
+
+/* designing Classes */
+
+/* box-appear */
+
+.box-appear{
+  animation: box-appear both;
+  animation-timeline: view(10% 2%);
+}
+
+@keyframes box-appear{
+  from{
+    opacity: 0.2;
+    transform: translateX(-200px);
+  }
+  30%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* text-appear */
+
+.text-appear{
+  animation: text-appear both;
+  animation-timeline: view(300px 100px);
+}
+@keyframes text-appear{
+  from{
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  50%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* image-reveal */
+
+.image-reveal{
+  scale: 0.8; opacity: 0;
+  animation: image-reveal linear forwards;
+  animation-timeline: view();
+  animation-range: 200px 500px;
+}
+
+@keyframes image-reveal{
+  to{
+    scale: 1;
+    opacity: 1;
+  }
+}
